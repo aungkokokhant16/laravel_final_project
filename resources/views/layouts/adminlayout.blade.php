@@ -123,7 +123,25 @@
         </nav>
         <!--/.Navbar -->
 
-        @yield("content")
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{{route("admin.manage_premium_users")}}">Manage Premium User</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{route("admin.contact_messages")}}">Contact Manager</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- JQuery -->
         <script
